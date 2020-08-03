@@ -18,7 +18,7 @@ import (
 
 func main() {
     app := clevergo.New()
-    pprof.RegisterHandlers(app)
+    pprof.RegisterHandler(app)
     app.Run(":8080")
 }
 ```
